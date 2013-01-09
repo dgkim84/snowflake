@@ -5,10 +5,11 @@
 # Snowflake, and all new java services, require the same directory structure
 #   /usr/local/snowflake should contain 'releases' directory and be able to create a symlink
 #   /var/log/snowflake (chown daemon, chmod 775)
+. /etc/init.d/functions
 
 APP_NAME="snowflake"
-MAIN_JAR="snowflake-1.0.jar"
-VERSION="1.0"
+MAIN_JAR="snowflake-1.0.2-SNAPSHOT.jar"
+VERSION="1.0.2-SNAPSHOT"
 APP_HOME="/usr/local/snowflake/current"
 MAIN_CLASS="com.twitter.service.snowflake.SnowflakeServer"
 DAEMON="/usr/local/bin/daemon"
